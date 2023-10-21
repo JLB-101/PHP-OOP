@@ -15,8 +15,15 @@
     <body>
 
         <!-- Mudando a visibilade-->
-        <pre style="font-weight: bold; color: blue; background-color: yellowgreen;">
+        <pre style="font-weight: bold; color: blue; background-color: yellowgreen; align-items: center; justify-content: center; justify-items: center;">
+            
+            <H1>CONTROLE REMOTO</H1>
             <?php
+            require_once('ControleRemote.php');
+            //
+            echo'-------- MENU --------';
+            $r = new  ControleRemote();
+            $r->abrirMenu();
             
             ?>
          </pre>
