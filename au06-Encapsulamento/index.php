@@ -23,7 +23,9 @@
             //
             echo'-------- MENU --------';
             $r = new  ControleRemote();
+            $r->
             $r->abrirMenu();
+     
             
             ?>
          </pre>

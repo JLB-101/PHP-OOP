@@ -20,30 +20,30 @@ class ControleRemote implements Controlador
 
     # metodos
     //getts
-    public function getVolume()
+    private function getVolume()
     {
         return $this->volume;
     }
 
-    public function getLigado()
+    private function getLigado()
     {
         return $this->ligado;
     }
-    public function getTocando()
+    private function getTocando()
     {
         return $this->tocando;
     }
     //setts($tocando) {
 
-    public function setVolume($volume)
+    private function setVolume($volume)
     {
         $this->volume = $volume;
     }
-    public function setLigado($ligado)
+    private function setLigado($ligado)
     {
         $this->ligado = $ligado;
     }
-    public function setTocando($tocando)
+    private function setTocando($tocando)
     {
         $this->tocando = $tocando;
     }
