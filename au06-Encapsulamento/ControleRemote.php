@@ -85,14 +85,18 @@ class ControleRemote implements Controlador
     public function maisVolume()
     {
         if($this->getLigado()){
-            $this->setVolume($this->getVolume()+1);
+            $this->setVolume($this->getVolume()+10);
+        }else{
+            echo '<p> ERRO! Nao posso aumentar o volume </p>';
         }
     }
 
     public function menosVolume()
     {
         if($this->getLigado()){
-            $this->setVolume($this->getVolume()-1);
+            $this->setVolume($this->getVolume()-10);
+        }else{
+            echo '<p> ERRO! Nao posso diminuir o volume </p>';
         }
 
     }

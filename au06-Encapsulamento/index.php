@@ -23,7 +23,8 @@
             //
             echo'-------- MENU --------';
             $r = new  ControleRemote();
-            $r->
+           
+            $r->maisVolume();$r->maisVolume();
             $r->abrirMenu();
      
             
