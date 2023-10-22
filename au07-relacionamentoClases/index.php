@@ -17,10 +17,15 @@
         <!-- Mudando a visibilade-->
         <pre style="font-weight: bold; color: blue; background-color: yellowgreen; align-items: center; justify-content: center; justify-items: center;">
             
-            <H1></H1>
+            <H1>Torneio UFC</H1>
             <?php
-            
+                require_once('Lutador.php');
+                $l = array();
+                $l[0]= new Lutador('john','Franca', 30, 1.75, 68.9, 11, 2, 1,8);
+                $l[0]->apresentar();
+
             ?>
+               
          </pre>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
