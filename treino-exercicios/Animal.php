@@ -6,8 +6,10 @@ class Animal {
     //Atributos
     private $especie;
     private $raca;
-
     private $cor;
+    private $peso;
+    
+    
 
 
     public function andar(){
