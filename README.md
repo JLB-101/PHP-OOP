@@ -17,7 +17,7 @@
 
  #Exercicios treino:
 
-NB: USAR Conceito de Encapsulamento: visibilidade, meodos getters e setters. e um metodo para imprimir toda informacao do funcionario.
+NB: USAR Conceito de Encapsulamento: visibilidade(Privado), metodos getters e setters publicos. e um metodo para imprimir toda informacao do funcionario , o ID deve ser auto incrementados nao pose colocar manualmente no contrutor. a criaacao do objecto deve ser por contrutor com parametros.ex contrutor("nome", ""...);
 ex:
 
  14:10-15:20> 
