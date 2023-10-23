@@ -23,6 +23,15 @@ ex:
  14:10-15:20> 
  uma empresa pretende criar uma base de dados para cadastrar funcionario da cada "departamento" sengundo o Cargo que ele exerce, informacoes adicionais como Morada, Telefone.  e no final mostre uma lista que possa dar numero total dos funcionarios na Lista..
 
+#estrutura do codigo
+//class x
+
+//Atributos
+
+//metodo contrutor
+
+
+// metodo para ipressao da informacao do funcionario
 
 Apoio: codigo de auto incremento... 
 # caminho da pasta:

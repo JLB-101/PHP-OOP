@@ -8,18 +8,22 @@ class Funcionario
     private $nextId = 1;
     private  $id;
     private  $nome;
+
+    private $genero;
+
     private $Morada;
 
     private $Telefone;
 
     private $departamento;
 
-    private $Cargo
+    private $Cargo;
 
     //metodo contructor
 
     public function __construct($nome, $Morada, $Telefone, $departamento, $Cargo){
-        $this->id = $id;
+        $this->id = $this->nextId;
+        $this->nextId++;
         $this->nome = $nome;
         $this->Morada = $Morada;
         $this->Telefone = $Telefone;
@@ -28,7 +32,8 @@ class Funcionario
 
     }
 
-    //metodos getters e 
+    //metodos getters e setters
+    public function getId(){    
 
 
 
