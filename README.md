@@ -1,7 +1,3 @@
-
-
-
-
 # Object Oriented Programming -- Programação Orientada a Objetos
  
  PHP course | Curso de PHP
@@ -15,13 +11,26 @@
 
 
 
- #Exercicios treino:
+# Exercicios treino:
 
-NB: USAR Conceito de Encapsulamento: visibilidade(Privado), metodos getters e setters publicos. e um metodo para imprimir toda informacao do funcionario , o ID deve ser auto incrementados nao pose colocar manualmente no contrutor. a criaacao do objecto deve ser por contrutor com parametros.ex contrutor("nome", ""...);
-ex:
+NB: USAR Conceito de Encapsulamento: visibilidade(Privado), metodos getters e setters publicos. e um metodo para imprimir toda informacao do Animal , o ID deve ser auto incrementados nao pose colocar manualmente no contrutor. a criaacao do objecto deve ser por contrutor com parametros.ex contrutor("nome", ""...); e um metodo toString para imprimir a informacao.
+ex: toString(){}
+    escreve:
+            id:1
+            nome do animal: rex
+            tipo de animal: Cao
+            Raca: pastor
 
- 14:10-15:20> 
- uma empresa pretende criar uma base de dados para cadastrar funcionario da cada "departamento" sengundo o Cargo que ele exerce, informacoes adicionais como Morada, Telefone.  e no final mostre uma lista que possa dar numero total dos funcionarios na Lista..
+            id:2
+            nome do animal: Mir
+            tipo de animal: gato
+            Raca: fex
+
+
+
+
+ 17:10-17:50> 
+ um Laboratorio de biologia pretende  criar uma base de dados para cadastrar Animais sengundo o Especies (Considerando apena que existem CAO E GATO) que tem como caracteristicas RACA, COR, Cor dos olhos, e os Animais Compartilham do mesmo comportamentos como: andar, dormir, comer. Mas tem particularidades como Latir e Miar. .  e no final mostre uma lista que possa dar numero total dos funcionarios na Lista.
 
 #estrutura do codigo
 //class x
