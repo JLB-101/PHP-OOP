@@ -29,7 +29,7 @@ ex: toString(){}
 
 
 
- 17:10-17:50> 
+ 17:10-18:10> 
  um Laboratorio de biologia pretende  criar uma base de dados para cadastrar Animais sengundo o Especies (Considerando apena que existem CAO E GATO) que tem como caracteristicas RACA, COR, Cor dos olhos, e os Animais Compartilham do mesmo comportamentos como: andar, dormir, comer. Mas tem particularidades como Latir e Miar. .  e no final mostre uma lista que possa dar numero total dos funcionarios na Lista.
 
 #estrutura do codigo
