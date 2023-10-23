@@ -17,9 +17,12 @@
 
  #Exercicios treino:
 
+NB: USAR Conceito de Encapsulamento: visibilidade, meodos getters e setters. e um metodo para imprimir toda informacao do funcionario.
+ex:
 
  14:10-15:20> 
  uma empresa pretende criar uma base de dados para cadastrar funcionario da cada "departamento" sengundo o Cargo que ele exerce, informacoes adicionais como Morada, Telefone.  e no final mostre uma lista que possa dar numero total dos funcionarios na Lista.
+
 
 Apoio: codigo de auto incremento... 
 # caminho da pasta:
