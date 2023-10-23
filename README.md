@@ -18,7 +18,10 @@
  #Exercicios treino:
 
 
- 14:10-14:50> 
+ 14:10-15:20> 
  uma empresa pretende criar uma base de dados para cadastrar funcionario da cada "departamento" sengundo o Cargo que ele exerce, informacoes adicionais como Morada, Telefone.  e no final mostre uma lista que possa dar numero total dos funcionarios na Lista.
 
-Apoio: Link: https://github.com/JLB-101/Creating-ShopCustomer-With-ID/blob/master/src/duke/choice/Customer.java
+Apoio: codigo de auto incremento... 
+# caminho da pasta:
+na pasta: /src/duke/choice/Customer.java
+Link: https://github.com/JLB-101/Creating-ShopCustomer-With-ID/blob/master/src/duke/choice/Customer.java
