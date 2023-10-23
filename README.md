@@ -13,10 +13,11 @@
 
 # Exercicios treino:
 
+OOP:
 NB: USAR Conceito de Encapsulamento: visibilidade(Privado), metodos getters e setters publicos. e um metodo para imprimir toda informacao do Animal , o ID deve ser auto incrementados nao pose colocar manualmente no contrutor. a criaacao do objecto deve ser por contrutor com parametros.ex contrutor("nome", ""...); e um metodo toString para imprimir a informacao.
 ex: toString(){}
     escreve:
-    
+
             id:1
             nome do animal: rex
             tipo de animal: Cao
