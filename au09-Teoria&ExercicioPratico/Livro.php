@@ -1,5 +1,7 @@
 <?php 
-class Livro {
+class Livro implements Publicacao {
+    
+    //Atributos
     private $titulo;
     private $autor;
     private $toPaginas;
@@ -9,9 +11,7 @@ class Livro {
 
     private $leitor;
 
-
     // getters & setters
-
     public function getTitulo() {
         return $this->titulo;
     }
@@ -53,6 +53,14 @@ class Livro {
     public function detalhes(){
         # code
     }
+
+    //publicacao function
+    public function abrir(){}
+    public function fechar(){}
+    public function folhear($p){}
+    public function avancarPage(){}
+    public function voltarPage(){}
+
 
 
 }
