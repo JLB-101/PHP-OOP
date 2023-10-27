@@ -7,6 +7,8 @@ class Cao extends Animal
 {
     //Atributos
    
+    protected $id;
+   
     private $corOlhos;
 
     //gett and setts
@@ -50,6 +52,13 @@ class Cao extends Animal
 
   
     //metodos de inpressao
+    public function info()
+    {
+       echo '<br>id: '.$this->getId().'
+       <br>nome do animal: '.$this->getNome().'
+       <br>tipo de animal: '.$this->getespecie().'
+       <br> Raca: '.$this->getraca().'<br>';
+    }
 
 
 }

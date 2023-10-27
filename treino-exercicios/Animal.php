@@ -3,7 +3,7 @@
 //Class Mae
 class Animal
 {
-    protected $nextId = 0;
+    protected $nextId = 1;
     protected  $id;
     //Atributos
     protected $nome;
@@ -18,7 +18,7 @@ class Animal
         return $this->id;
     }
     public function setId($id){
-        $this->id = $id;
+       $this->id = $id;
     }
     public function getNome()
     {
