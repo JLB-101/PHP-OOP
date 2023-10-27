@@ -27,7 +27,7 @@ class Pessoa {
     
     // metodos especias
     public function fazerAniversario(){
-        
+        $this->idade = $this->getIdade() + 1;
     }
 
 
