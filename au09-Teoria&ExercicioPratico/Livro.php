@@ -1,4 +1,7 @@
-<?php 
+<?php
+# imports:
+require_once('Publicacao.php');
+
 class Livro implements Publicacao {
     
     //Atributos
@@ -55,11 +58,25 @@ class Livro implements Publicacao {
     }
 
     //publicacao function
-    public function abrir(){}
-    public function fechar(){}
-    public function folhear($p){}
-    public function avancarPage(){}
-    public function voltarPage(){}
+    public function abrir(){
+        $this->aberto = true;
+    }
+    public function fechar(){
+        $this->aberto = false;
+    }
+    public function folhear($p){
+        if($p > $this->toPaginas) {
+            $this->pagAtual = 0;
+        }else {
+            $this->pagAtual = $p;
+        }
+    }
+    public function avancarPage(){
+        $this->pagAtual++;
+    }
+    public function voltarPage(){
+        $this->pagAtual--;
+    }
 
 
 
