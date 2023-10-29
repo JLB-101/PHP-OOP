@@ -8,13 +8,16 @@
 <body>
     <h1></h1>
     <?php
+    # imports:
     require_once('Pessoa.php');
     require_once('Funcionario.php');
     require_once('Aluno.php');
     require_once('Professor.php');
 
-
     //
+    $p1 = new Pessoa();
+    
+  
     
     ?>
 </body>

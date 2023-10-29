@@ -1,32 +1,44 @@
-<?php 
-class Aluno
-{   
+<?php
+# imports:
+require_once('Pessoa.php');
+
+//class filha da Pessoa
+class Aluno extends Pessoa
+{
     //Atributs
     private $matricula;
     private $curso;
 
-
-    //_construct
+    //construtor
+    public function __construct()
+    {
+    }
 
     //getts and setts
-    public function getMatricula(){
+    public function getMatricula()
+    {
         return $this->matricula;
     }
-    public function setMatricula($matricula){
+    public function setMatricula($matricula)
+    {
         $this->matricula = $matricula;
     }
-    public function getCurso(){
+    public function getCurso()
+    {
         return $this->curso;
     }
-    public function setCurso($curso){
+    public function setCurso($curso)
+    {
         $this->curso = $curso;
     }
 
     //
-    public function cancelarMatricula(){
-        $this->matricula = false;
+    public function cancelarMatricula()
+    {
+        $matricula = "Cancelada";
+        echo "Matricula esta: {$matricula}";
     }
-    
+
 
 }
 
