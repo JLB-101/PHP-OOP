@@ -64,7 +64,7 @@ class Livro implements Publicacao {
     // functions
     public function detalhes(){
         # code
-        echo "Livro {$this->getTitulo()} escrito por {$this->getAutor()} Lido por {$this->getLeitor()}";
+        echo "Livro {$this->getTitulo()} escrito por {$this->getAutor()} Lido por {$this->leitor->getNome()}".'<hr><br>';
     }
 
     //publicacao function
