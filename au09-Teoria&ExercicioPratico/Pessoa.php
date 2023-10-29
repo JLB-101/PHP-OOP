@@ -6,6 +6,11 @@ class Pessoa {
     private $sexo;
 
     //Construtor
+    public function __construct($nome, $idade, $sexo) { 
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->sexo = $sexo;
+    }
 
     // getters & setters
     public function getNome() {
