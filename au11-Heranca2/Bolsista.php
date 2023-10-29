@@ -1,7 +1,7 @@
 <?php
 
 //classe filha da classe Aluno<-Pessoa
-class Bolsista extends Aluno
+final class Bolsista extends Aluno
 {
     //Atributos
     private $bolsa;
