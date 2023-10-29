@@ -36,7 +36,7 @@ final class Tecnico extends Aluno
     //
     public function info()
     {
-        echo "Nome: {$this->getNome()} estudante do Curso {$this->getCurso()} com numero de Registro {$this->getRegistroProfissional()} ";
+        echo "N<p> ome: {$this->getNome()} estudante do Curso {$this->getCurso()} com numero de Registro {$this->getRegistroProfissional()} </p>";
     }
 }
 
