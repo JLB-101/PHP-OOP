@@ -14,6 +14,17 @@ class Livro implements Publicacao {
 
     private $leitor;
 
+    //Construct
+    public function __construct($titulo, $autor, $toPaginas, $pagAtual, $aberto, $leitor) {
+        $this->titulo = $titulo;
+        $this->autor = $autor;
+        $this->toPaginas = $toPaginas;
+        $this->pagAtual = $pagAtual;
+        $this->aberto = $aberto;
+        $this->leitor = $leitor;
+    }
+
+
     // getters & setters
     public function getTitulo() {
         return $this->titulo;
