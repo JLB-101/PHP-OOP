@@ -29,7 +29,10 @@ class Pessoa
         $this->getIdade() + 1;
     }
 
-    
+    //imprimir
+    public function info (){
+        # code
+    }
 }
 
 

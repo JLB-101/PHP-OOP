@@ -28,5 +28,10 @@ class Professor extends Pessoa
     public function receberAum(){
         $this->salario += ($this->getSalario()*0.2);
     }
+
+    //imprimir
+    public function info (){
+        echo"Nome: {$this->getNome()}, Sexo: {$this->getGenero()} especialista em: {$this->getEspecialidade()} e Salario: {$this->getSalario()}. <hr><br>";
+    }
 }
 ?>
