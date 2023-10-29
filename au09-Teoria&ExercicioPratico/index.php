@@ -15,9 +15,11 @@
     require_once('Pessoa.php');
 
     //
-    $p[0] = new Pessoa('Pedro', 22, 'M');
+    $p[0] = new Pessoa('pedro', 22, 'M');
+    $p[1] = new Pessoa('MAria', 31, 'F');
 
-
+    # 
+    $l[0] = new Livro('PHP Basico', 'Jose da silva', 300, $p[0]);
     ?>
     </pre>
 </body>
