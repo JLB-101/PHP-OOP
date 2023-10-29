@@ -5,6 +5,8 @@ class Pessoa {
     private $idade;
     private $sexo;
 
+    //Construtor
+
     // getters & setters
     public function getNome() {
         return $this->nome;
