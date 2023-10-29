@@ -44,7 +44,7 @@ class Professor extends Pessoa
     //imprimir
     public function info()
     {
-        echo "Nome: {$this->getNome()}, Sexo: {$this->getGenero()} especialista em: {$this->getEspecialidade()} e Salario: {$this->getSalario()}. <hr><br>";
+        echo "Nome do Professor: {$this->getNome()}, Sexo: {$this->getGenero()}, especialista em: {$this->getEspecialidade()} e Salario: {$this->getSalario()}. <hr><br>";
     }
 }
 ?>

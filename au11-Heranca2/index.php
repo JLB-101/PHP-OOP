@@ -15,12 +15,14 @@
     require_once('Aluno.php');
     require_once('Bolsista.php');
     require_once('Tecnico.php');
+    require_once('Professor.php');
 
     //
    // $p1 = new Pessoa();
     $p2 = new Aluno();
     $p3 = new Bolsista();
     $p4 = new Tecnico('Amelia', 'F', 'Direito', 1110333);
+    $p5 = new Professor('Marcos Javre', 'M','Fisica', '25000.00 MT');
     
 
     //
@@ -53,6 +55,8 @@
     print_r($p3);
     echo '<br>';
     $p4->info();
+    echo '<br>';
+    $p5->info();
    
 
     ?>
