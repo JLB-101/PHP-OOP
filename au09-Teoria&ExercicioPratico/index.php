@@ -20,6 +20,8 @@
 
     # 
     $l[0] = new Livro('PHP Basico', 'Jose da silva', 300, $p[0]);
+    $l[0]->abrir();
+    
     ?>
     </pre>
 </body>
