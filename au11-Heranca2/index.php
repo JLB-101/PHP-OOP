@@ -14,11 +14,14 @@
     require_once('Pessoa.php');
     require_once('Aluno.php');
     require_once('Bolsista.php');
+    require_once('Tecnico.php');
 
     //
    // $p1 = new Pessoa();
     $p2 = new Aluno();
     $p3 = new Bolsista();
+    $p4 = new Tecnico('Amelia', 'F', 'Direito', 1110333);
+    
 
     //
    // $p1->setNome('John');
@@ -40,12 +43,16 @@
     $p3->setCurso('Contabilidade');
 
 
+
+
     //
    // print_r($p1);
     echo '<br>';
     print_r($p2);
     echo '<br>';
     print_r($p3);
+    echo '<br>';
+    $p4->info();
    
 
     ?>
