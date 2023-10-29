@@ -15,12 +15,10 @@ class Livro implements Publicacao {
     private $leitor;
 
     //Construct
-    public function __construct($titulo, $autor, $toPaginas, $pagAtual, $aberto, $leitor) {
+    public function __construct($titulo, $autor, $toPaginas, $leitor) {
         $this->titulo = $titulo;
         $this->autor = $autor;
         $this->toPaginas = $toPaginas;
-        $this->pagAtual = $pagAtual;
-        $this->aberto = $aberto;
         $this->leitor = $leitor;
     }
 
