@@ -2,7 +2,7 @@
 # imports:
 require_once('Pessoa.php');
 
-//classe filha da classe Pessoa
+//class filha da Pessoa
 class Aluno extends Pessoa
 {
     //Atributs
@@ -37,6 +37,10 @@ class Aluno extends Pessoa
     {
         $matricula = "Cancelada";
         echo "Matricula esta: {$matricula}";
+    }
+
+    public function pagarMensalidade(){
+        echo"<p> Pagando  Mensalidade do aluno {$this->getNome()}";
     }
 
 

@@ -1,7 +1,16 @@
 <?php
+/**
+ * Eng: An Abstract Classes are classes that define the most elementary structure of a class that you can create. 
+ * They cannot be instantiated.
+ * 
+ * Pt: Uma Classes abstratas são classes que,
+ * definem a estrutura mais elementar de uma classe que você possa criar.
+ * Elas não podem ser instanciadas.
+ */
 
-//class mae
-class Pessoa
+
+//class Abstrac
+abstract class Pessoa
 {
     //atributs
     private $nome;
@@ -41,7 +50,7 @@ class Pessoa
     }
 
     // metodo 
-    public function fazerAniv()
+    public function fazerAniversario()
     {
         $this->idade++;
     }
