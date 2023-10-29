@@ -10,8 +10,11 @@ class Professor extends Pessoa
     private $salario;
 
     //construtor
-    public function __construct()
-    {
+    public function __construct( $nome, $genero, $especialidade, $salario){
+        $this->setNome($nome);
+        $this->setGenero($genero);
+        $this->especialidade = $especialidade;
+        $this->salario = $salario;
     }
 
     //getts and setts
