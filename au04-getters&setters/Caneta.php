@@ -8,7 +8,7 @@ class Caneta
     private $carga;
     private $tampada;
     /**
-     * contrutor Ca
+     * Construtor padrão
      */
     public function Caneta(){
 
