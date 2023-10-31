@@ -8,10 +8,51 @@ require_once('Ave.php');
 class Avestruz extends Ave
 {
     //Atributo
+    private $id = 1;
+    private $codeNome = 'Avestruz';
+    private $corPenas;
     private $altura;
 
+    //metodo (function) contruct 
+    public function __construct($peso, $idade, $corPenas, $altura)
+    {
+        $i = $this->id;
+        $this->id++;
 
-    //
+        $this->setCodeNome($this->codeNome . "[{$i}]");
+        $this->setPeso($peso);
+        $this->setidade($idade);
+        $this->setCorPenas($corPenas);
+        $this->setAltura($altura);
+    }
+
+    //gets and sets
+    public function getCodeNome()
+    {
+        return $this->codeNome;
+    }
+    public function setCodeNome($codeNome)
+    {
+        $this->codeNome = $codeNome;
+    }
+    public function getCorPenas()
+    {
+        return $this->corPenas;
+    }
+    public function setCorPenas($corPenas)
+    {
+        $this->corPenas = $corPenas;
+    }
+    public function getAltura(){
+        return $this->altura;
+    }
+    public function setAltura($altura){
+        $this->altura = $altura;
+    }
+
+
+
+    // metodos -- comportamento unico
     public function abrirPelansTrazeira(){
         echo"Avestrus: Abriu as pelas Trazeiras";
     }

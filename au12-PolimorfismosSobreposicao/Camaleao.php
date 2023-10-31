@@ -6,14 +6,41 @@ require_once('Reptil.php');
 // class filha de Reptil-->Animal
 class Camaleao extends Reptil
 {
+    //Atributs
+    private $id = 1;
+    private $codeNome = 'Camaleao';
     private $corPele;
 
-    public function getPele()
+    //metodo (function) contruct 
+    public function __construct($peso, $idade, $corPele)
+    {
+        $i = $this->id;
+        $this->id++;
+
+        $this->setCodeNome($this->codeNome . "[{$i}]");
+        $this->setPeso($peso);
+        $this->setidade($idade);
+        $this->setCorPele($corPele);
+       
+    }
+    
+
+
+    //gets & sets
+    public function getCodeNome()
+    {
+        return $this->codeNome;
+    }
+    public function setCodeNome($codeNome)
+    {
+        $this->codeNome = $codeNome;
+    }
+    public function getCorPele()
     {
         return $this->corPele;
     }
 
-    public function setPele($corPele)
+    public function setCorPele($corPele)
     {
         $this->corPele = $corPele;
     }
@@ -23,7 +50,7 @@ class Camaleao extends Reptil
     {
         $this->corPele = $corpele;
 
-        if ($this->getPele() != $corpele) {
+        if ($this->getCorPele() != $corpele) {
             echo 'O cameleao trocou cor !';
         }else{
             echo 'O cor continua a mesma !';

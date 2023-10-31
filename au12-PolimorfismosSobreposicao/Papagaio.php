@@ -5,27 +5,63 @@ require_once('Ave.php');
 
 // class filha de Ave-->Animal
 
-class Papagaio extends Ave{
+class Papagaio extends Ave
+{
 
     //Atributos
+    private $id = 1;
+    private $codeNome = 'Papagaio';
     private $corPenas;
 
-    // metodos -- comportamento unico
-    
+    //metodo (function) contruct 
+    public function __construct($peso, $idade, $corPenas)
+    {
+        $i = $this->id;
+        $this->id++;
 
-    # Metedos: SobrePosicao
-    public function locomover(){
-       echo'Pagaio Voando';
+        $this->setCodeNome($this->codeNome . "[{$i}]");
+        $this->setPeso($peso);
+        $this->setidade($idade);
+        $this->setCorPenas($corPenas);
     }
 
-    public function alimentar(){
+    //gets and sets
+    public function getCodeNome()
+    {
+        return $this->codeNome;
+    }
+    public function setCodeNome($codeNome)
+    {
+        $this->codeNome = $codeNome;
+    }
+    public function getCorPenas()
+    {
+        return $this->corPenas;
+    }
+    public function setCorPenas($corPenas)
+    {
+        $this->corPenas = $corPenas;
+    }
+
+    // metodos -- comportamento unico
+
+
+    # Metedos: SobrePosicao
+    public function locomover()
+    {
+        echo 'Pagaio Voando';
+    }
+
+    public function alimentar()
+    {
         echo 'Comer futas, Legumes..';
     }
 
-    public function emitirSom(){
+    public function emitirSom()
+    {
         echo 'Papagaio: Emitar Fala humana: oi oi ola';
     }
-    
+
 }
 
 ?>
