@@ -1,5 +1,9 @@
 <?php
+# imports:
+require_once('Animal.php');
+require_once('Reptil.php');
 
+// class filha de Reptil-->Animal
 class Camaleao extends Reptil
 {
     private $corPele;

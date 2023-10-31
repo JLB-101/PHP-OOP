@@ -1,4 +1,10 @@
-<?php 
+<?php
+# imports:
+require_once('Animal.php');
+require_once('Ave.php');
+
+// class filha de Ave-->Animal
+
 class Papagaio extends Ave{
 
     //Atributos

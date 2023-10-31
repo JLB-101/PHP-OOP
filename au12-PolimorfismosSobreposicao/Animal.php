@@ -1,8 +1,8 @@
 <?php
 # imports:
-require_once('');
 
-//class mae:
+
+//class(root) mae:
 abstract class Animal
 {
     //atributs -- caracteristicas
