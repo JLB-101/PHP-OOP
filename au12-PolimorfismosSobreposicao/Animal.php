@@ -5,19 +5,26 @@ require_once('');
 //class mae:
 abstract class Animal
 {
-    //atributs
+    //atributs -- caracteristicas
     private $peso;
     private $idade;
 
-    //metodos
-    public function locomover(){
+    //metodos -- comportamento
+    public function locomover()
+    {
         # code
     }
 
-    public function alimentar(){# code
+    public function alimentar()
+    { # code
     }
 
-    public function emitirSom(){# code
+    public function emitirSom()
+    { # code
+    }
+    public function info()
+    {
+        # code
     }
 
 }
