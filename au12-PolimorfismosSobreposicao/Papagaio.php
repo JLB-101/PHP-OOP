@@ -9,23 +9,31 @@ class Papagaio extends Ave
 {
 
     //Atributos
-    private $id = 1;
+    private $nextId = 1;
+    private $id;
     private $codeNome = 'Papagaio';
     private $corPenas;
 
     //metodo (function) contruct 
     public function __construct($peso, $idade, $corPenas)
     {
-        $i = $this->id;
-        $this->id++;
+        $this->id = $this->nextId;
+        $this->nextId++;
 
-        $this->setCodeNome($this->codeNome . "[{$i}]");
+        $this->setCodeNome($this->codeNome . "[{$this->getId()}]");
         $this->setPeso($peso);
         $this->setidade($idade);
         $this->setCorPenas($corPenas);
     }
 
     //gets and sets
+    public function getId(){
+        return $this->id;
+    }
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
     public function getCodeNome()
     {
         return $this->codeNome;
@@ -60,6 +68,11 @@ class Papagaio extends Ave
     public function emitirSom()
     {
         echo 'Papagaio: Emitar Fala humana: oi oi ola';
+    }
+
+    public function info()
+    {
+        echo "Nome do Animal: {$this->getCodeNome()}<br>Peso: {$this->getPeso()}<br>idade do Animal: {$this->getIdade()} <br> Cor do Animal:  {$this->getCorPenas()} <hr> ";
     }
 
 }

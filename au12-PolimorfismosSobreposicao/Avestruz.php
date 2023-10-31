@@ -27,6 +27,13 @@ class Avestruz extends Ave
     }
 
     //gets and sets
+    public function getId(){
+        return $this->id;
+    }
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
     public function getCodeNome()
     {
         return $this->codeNome;

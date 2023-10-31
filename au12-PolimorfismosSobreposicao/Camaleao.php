@@ -27,6 +27,13 @@ class Camaleao extends Reptil
 
 
     //gets & sets
+    public function getId(){
+        return $this->id;
+    }
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
     public function getCodeNome()
     {
         return $this->codeNome;
