@@ -13,6 +13,7 @@ class Video implements AcoesVideo {
     private $reproduzindo;
 
     //Contruct
+    
 
 
     //gets & sets
