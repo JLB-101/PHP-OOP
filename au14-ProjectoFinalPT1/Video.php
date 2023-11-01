@@ -14,6 +14,8 @@ class Video implements AcoesVideo
     private $curtida;
     private $reproduzindo;
 
+    private $deslike;
+
     //Contruct
     public function __construct($id, $title)
     {
@@ -83,25 +85,31 @@ class Video implements AcoesVideo
     {
         $this->reproduzindo = $reproduzindo;
     }
+    public function getDeslike(){
+        return $this->deslike;
+    }
+    public function setDeslike($deslike){
+        $this->deslike = $deslike;
+    }
 
 
 
     //metodos (function)
     public function play()
     {
-
+        $this->reproduzindo = true;
     }
     public function pause()
     {
-
+        $this->reproduzindo = false;
     }
     public function like()
     {
-
+        $this->curtida++;
     }
     public function dislike()
     {
-
+        $this->deslike++;
     }
 
 
