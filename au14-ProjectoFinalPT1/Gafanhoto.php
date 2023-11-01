@@ -11,7 +11,6 @@ class Gafanhoto extends Pessoa
     //Contructor -- getting from Pessoa || herdando da Pessoa
     public function __construct($nome, $idade, $sexo, $login, )
     {
-        //super($nome, $idade, $sexo);
         parent::__construct($nome, $idade, $sexo);
         $this->login = $login;
         $this->totAsistido = 0;
