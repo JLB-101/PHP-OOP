@@ -8,11 +8,12 @@
 <body>
     <h1></h1>
     <p></p>
+    <pre>
     <?php 
     # imports:
     require_once('Video.php');
+    require_once('Gafanhoto.php');
 
-    //
     $v[0] = new Video(1,'Aula 1 OOP');
     $v[1] = new Video(2,'PHP OOP');
     $v[2] = new Video(3,'Aula HTML e PHP com OOP');
@@ -20,8 +21,18 @@
     //output -- saida:
     var_dump($v);
 
+    echo'<br>';
+    $g[0] = new Gafanhoto('Jubileu', 22, 'M', 'juba');
+    $g[0] = new Gafanhoto('Creuza', 26, 'F', 'Cre');
 
+    var_dump($g);
+
+  
+  
 
     ?>   
+    </pre>
 </body>
+
+
 </html>
