@@ -1,5 +1,6 @@
 <?php
-
+# imports:
+require_once('AcoesVideo.php');
 class Video implements AcoesVideo
 {
 
