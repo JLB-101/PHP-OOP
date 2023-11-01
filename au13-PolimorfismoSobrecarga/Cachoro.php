@@ -1,5 +1,6 @@
 <?php
 # imports:
+//this path is correct
 require_once('../au12-PolimorfismosSobreposicao/Lobo.php');
 
 //class filha de  Lobo --->Mamifero-->Animal
