@@ -10,9 +10,11 @@
     <p></p>
     <?php 
     # imports:
-    require_once('');
+    require_once('Video.php');
 
     //
+    $v[0] = new Video();
+
 
 
     ?>   
