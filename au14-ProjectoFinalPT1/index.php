@@ -13,7 +13,12 @@
     require_once('Video.php');
 
     //
-    $v[0] = new Video();
+    $v[0] = new Video(1,'Aula 1 OOP');
+    $v[1] = new Video(2,'PHP OOP');
+    $v[2] = new Video(3,'Aula HTML e PHP com OOP');
+
+    //output -- saida:
+    var_dump($v);
 
 
 
