@@ -8,6 +8,14 @@ abstract class Pessoa{
     protected $sexo;
     protected $experiencia;
 
+    //Contructor -- Abstract class con't be inicialize
+    public function __construct($nome, $idade, $sexo){
+        $this->nome = $nome;
+        $this->idade = $idade;
+        $this->sexo = $sexo;
+        $this->experiencia = 0;
+    }
+
 
     //gets & sets
     public function getNome(){
@@ -36,7 +44,7 @@ abstract class Pessoa{
     }
 
     public function ganhaExperiencia (){
-
+        $this->experiencia++;
     }
 }
 
