@@ -3,7 +3,7 @@
 require_once('Animal.php');
 
 // class filha da Animal
-class Mamifero {
+class Mamifero extends Animal{
 
     
     //Atributos
