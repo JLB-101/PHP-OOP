@@ -28,8 +28,11 @@
 
     //Visualizacao -- Aula 15
     $vis[0] = new Visualizacao($g[0], $v[2]);
+   
     $vis[1] = new Visualizacao($g[1], $v[1]);
+    $vis[1]->avaliar(5);
     $vis[2] = new Visualizacao($g[1], $v[1]);
+    $vis[2]->avaliar(5);
     
     print_r($vis);
 
