@@ -5,13 +5,20 @@ require_once('Gafanhoto.php');
 require_once('Video.php');
 
 
-class Visualizacao{
+class Visualizacao  {
 
     //Atributs
     private $espectador;
     private $filme;
 
     //construct
+    public function __construct($espectador, $filme){
+        $this->espectador = $espectador;
+        $this->filme = $filme;
+        $this->filme->setView($this->filme->get_views() + 1);
+        $this->espectador->setTotAssistido($this->espectador->getTotAssistido() + 1);
+    
+    }
 
 
     //gets & sets
