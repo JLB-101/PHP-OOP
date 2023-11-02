@@ -33,8 +33,9 @@ class Visualizacao  {
    
     //Metodos (function) -- Aplicacao do pilimorfismo de sobrecarga:
 
-    public function avaliar(){
-        $this->filme->setAvaliacao(5);
+     //Avaliacacao: atribuicao
+    public function avaliar($nova){
+        $this->filme->setAvaliacao((int)$nova);
     }
 
     //Avaliacacao: por NOTA
@@ -44,6 +45,7 @@ class Visualizacao  {
 
     //Avaliacacao: por %porcentagem
     public function avaliarP ($porc){
+        //valor da avaliacao($nova)
         $nova = 0;
         if( $porc <= 20){
             $nova = 3;
