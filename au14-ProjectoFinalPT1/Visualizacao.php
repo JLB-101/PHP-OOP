@@ -15,9 +15,8 @@ class Visualizacao  {
     public function __construct($espectador, $filme){
         $this->espectador = $espectador;
         $this->filme = $filme;
-        $this->filme->setView($this->filme->get_views() + 1);
-        $this->espectador->setTotAssistido($this->espectador->getTotAssistido() + 1);
-    
+        $this->filme->setView($this->filme->getView() + 1);
+        $this->espectador->setTotAsistido($this->espectador->getTotAsistido() + 1);
     }
 
 
@@ -34,13 +33,26 @@ class Visualizacao  {
    
     //Metodos (function) -- Aplicacao do pilimorfismo de sobrecarga:
 
-    public function avaliar(){}
-
-    public function avaliarnota($nota){
-        $this->espectador = $nota;
+    public function avaliar(){
+        $this->filme->setAvaliacao(5);
     }
-    public function avalar($porc){
-        $porc;
+
+    //Avaliacacao: por NOTA
+    public function avaliarN($nota){
+        $this->filme->setAvaliacao($nota);
+    }
+
+    //Avaliacacao: por %porcentagem
+    public function avaliarP ($porc){
+        $nova = 0;
+        if( $porc <= 20){
+            $nova = 3;
+        }elseif( $porc <= 50 ){
+            $nova = 5;
+        }
+        elseif ($porc <= 90) {
+            $nova = 10;
+        }
     }
 
 
