@@ -61,7 +61,7 @@ class Video implements AcoesVideo
     {
         //media
         $media = 0;
-        $media = ($this->getAvaliacao() + $avaliacao) /2;
+        $media = ($this->getAvaliacao() + $avaliacao) / (int)$this->getView();//dividi por quantidade de visualizacao
         $this->avaliacao = $media;
     }
     public function getView()
